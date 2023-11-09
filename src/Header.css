@@ -1,0 +1,38 @@
+.container{
+    margin:2rem;
+    width: 700px;
+    background-color: var(--White);
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.notif_box{
+    display: flex;
+    align-items: center;
+}
+#notifications{
+    background-color: var(--Blue);
+    margin-left: .5rem;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: var(--White);
+    font-weight: 800;
+    border-radius: .5rem;
+}
+#mark_all{
+    cursor: pointer;
+}
+#mark_all:hover{
+    color: var(--Blue);
+}
+p{
+    color: var(--Dark-grayish-blue);
+}
