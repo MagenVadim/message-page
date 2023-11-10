@@ -8,7 +8,7 @@ import Message from './components/Message'
 
 function Main() {
   return (
-    <>
+    <main>
         <div className="notif_card unread">
             <Avatar url={"https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector.png"}/>
             <Description name={"Mark Webber"} reaction={"reacted to your post"} message = {"My first tournament today!"} time={"1m ago"}/>
@@ -21,7 +21,7 @@ function Main() {
 
         <div className="notif_card unread">
             <Avatar url={"https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-No-Background.png"}/>
-            <Description name={"Jacob Thompson"} reaction={"has joined your group"} time={"1 day ago"} link={"Chess Club"}/>
+            <Description name={"Jacob Thompson"} reaction={"has joined your group"} time={"1 day ago"} link={"Chess Club "}/>
         </div>
 
         <div className="notif_card">
@@ -50,7 +50,7 @@ function Main() {
             <Description name={"Anna Kim"} reaction={"left the group"} link={"Chess Club"} time={"2 weeks ago"}/>
         </div>
 
-    </>
+    </main>
 
   )
 }
