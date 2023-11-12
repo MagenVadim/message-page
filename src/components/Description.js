@@ -1,7 +1,7 @@
 function Description(props) {
     return (
         <>
-            <div className="description">
+            <div id={props.message} className="description">
                 <p className="user_activity">
                     <strong>{props.name}</strong> {props.reaction} <b>{props.message}</b> <strong className="link">{props.link}</strong>
                 </p>
