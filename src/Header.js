@@ -6,8 +6,12 @@ export default class Header extends Component{
   constructor(props){
     super(props);
 
-    
+    this.handleClick = this.handleClick.bind(this);    
   }
+
+    handleClick = ()=>{
+      this.props.updateMarkAll()
+    }
 
   render(){
     return (
@@ -16,7 +20,7 @@ export default class Header extends Component{
               <h2 className="title">Notifications</h2>
               <span id="notifications">{this.props.counter}</span>
           </div>
-          <p id="mark_all">Mark all as read</p>
+          <p id="mark_all" onClick={this.handleClick}>Mark all as read</p>
       </header>
     )
   }
